@@ -1,0 +1,19 @@
+# Ignore environment variables
+.env
+
+# Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore log and cache files
+logs/
+*.log
+
+# Ignore Streamlit & FastAPI cache
+.streamlit/

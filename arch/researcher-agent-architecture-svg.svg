@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">OpenAI Researcher Agent Architecture</text>
+  
+  <!-- User Interface Container -->
+  <rect x="50" y="80" width="700" height="120" rx="10" ry="10" fill="#e2f0cb" stroke="#82c91e" stroke-width="2"/>
+  <text x="400" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2b580c">User Interface (Streamlit)</text>
+  
+  <!-- UI Components -->
+  <rect x="80" y="120" width="120" height="60" rx="5" ry="5" fill="#c3e6cb" stroke="#82c91e" stroke-width="2"/>
+  <text x="140" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Topic Input</text>
+  
+  <rect x="230" y="120" width="120" height="60" rx="5" ry="5" fill="#c3e6cb" stroke="#82c91e" stroke-width="2"/>
+  <text x="290" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Start Research</text>
+  
+  <rect x="380" y="120" width="120" height="60" rx="5" ry="5" fill="#c3e6cb" stroke="#82c91e" stroke-width="2"/>
+  <text x="440" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Process Tab</text>
+  
+  <rect x="530" y="120" width="120" height="60" rx="5" ry="5" fill="#c3e6cb" stroke="#82c91e" stroke-width="2"/>
+  <text x="590" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Report Tab</text>
+  
+  <!-- Session State Container -->
+  <rect x="50" y="230" width="700" height="120" rx="10" ry="10" fill="#d0e8ff" stroke="#007bff" stroke-width="2"/>
+  <text x="400" y="255" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0056b3">Session State</text>
+  
+  <!-- State Components -->
+  <rect x="80" y="270" width="150" height="60" rx="5" ry="5" fill="#b8daff" stroke="#007bff" stroke-width="2"/>
+  <text x="155" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Conversation ID</text>
+  
+  <rect x="250" y="270" width="150" height="60" rx="5" ry="5" fill="#b8daff" stroke="#007bff" stroke-width="2"/>
+  <text x="325" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Collected Facts</text>
+  
+  <rect x="420" y="270" width="150" height="60" rx="5" ry="5" fill="#b8daff" stroke="#007bff" stroke-width="2"/>
+  <text x="495" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Research Done</text>
+  
+  <rect x="590" y="270" width="130" height="60" rx="5" ry="5" fill="#b8daff" stroke="#007bff" stroke-width="2"/>
+  <text x="655" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Report Result</text>
+  
+  <!-- Backend Processing Container -->
+  <rect x="50" y="380" width="700" height="120" rx="10" ry="10" fill="#fff3cd" stroke="#ff9800" stroke-width="2"/>
+  <text x="400" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ad6800">Backend Processing</text>
+  
+  <!-- Processing Components -->
+  <rect x="90" y="420" width="180" height="60" rx="5" ry="5" fill="#ffeeba" stroke="#ff9800" stroke-width="2"/>
+  <text x="180" y="455" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">run_research Function</text>
+  
+  <rect x="310" y="420" width="180" height="60" rx="5" ry="5" fill="#ffeeba" stroke="#ff9800" stroke-width="2"/>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Triage Agent</text>
+  
+  <rect x="530" y="420" width="180" height="60" rx="5" ry="5" fill="#ffeeba" stroke="#ff9800" stroke-width="2"/>
+  <text x="620" y="455" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">OpenAI Agents SDK</text>
+  
+  <!-- Environment Container -->
+  <rect x="200" y="530" width="400" height="60" rx="10" ry="10" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#721c24">Environment</text>
+  
+  <!-- Environment Component -->
+  <rect x="260" y="570" width="280" height="40" rx="5" ry="5" fill="#f5c6cb" stroke="#dc3545" stroke-width="2"/>
+  <text x="400" y="595" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">OpenAI API Key</text>
+  
+  <!-- Flow Arrows -->
+  <!-- UI to Backend -->
+  <path d="M140,180 L140,420 L180,420" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M290,180 L290,400 L180,420" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Backend Flow -->
+  <path d="M270,450 L310,450" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M490,450 L530,450" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Backend to State -->
+  <path d="M180,420 L180,330" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M180,420 L325,330" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M180,420 L495,330" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M180,420 L655,330" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- State to UI -->
+  <path d="M655,270 L655,180" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Environment to Backend -->
+  <path d="M400,570 L400,480" fill="none" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+  </defs>
+</svg>
