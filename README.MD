@@ -21,7 +21,7 @@ We implement a state-based workflow using a langGraph, ensuring queries pass thr
 5. **Escalation (if needed):** If unresolved, escalate the query.
 6. **End the process** after handling.
 
-<img src="arch/arch.png" alt="Workflow Diagram" width="500">
+<img src="arch/arch.png" alt="Workflow Diagram">
 
 ## 🛠 Installation Steps
 
